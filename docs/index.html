@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>FontGUI</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <header>
+        <h1>Fontを利用した画像の表示</h1>
+    </header>
+    <main>
+        <section id="introduction">
+            <h2>いんとろだくしょん</h2>
+            <div class="in-section">
+                <div class="image-medium">
+                    <img src="./pictures/sample.png" alt="sample">
+                </div>
+                <div class="right-document">
+                    <p>リソースパックを利用してFontに任意の画像を割り当てることで，テキストを表示できる場所に画像を表示できる。</p>
+                    <p>例:GUIの背景や任意のスロット(GUIのタイトルから)，プレイヤーの体力ゲージ上部(Actionbarから)</p>
+                    <p id="pros">メリット</p>
+                    <ul>
+                        <li>文字ごとに色を自由に変更可能</li>
+                        <li>表示位置もほぼ自由に変更可能</li>
+                    </ul>
+                    <p id="cons">デメリット</p>
+                    <ul>
+                        <li>アニメーションテクスチャは使用不可(shaderを利用したアニメーションは可能らしい)</li>
+                        <li>GUIタイトルを変更したい場合，GUI自体を開き直す必要がある</li>
+                        <li>画面サイズやGUIの大きさによって，表示位置を定められない場合がある</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="contents">
+            <ul>
+                <li><a href="#id-section1">a</a></li>
+                <li>b</li>
+                <li>c</li>
+            </ul>
+        </section>
+        <section id="id-section1">
+            <h2>a</h2>
+            aの内容です
+        </section>
+    </main>
+</body>
+</html>
