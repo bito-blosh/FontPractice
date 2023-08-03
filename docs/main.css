@@ -1,0 +1,34 @@
+body {
+    margin: 0px;
+    padding: 8px;
+}
+main {
+    height: auto;
+}
+div.in-section {
+    display: flex;
+}
+div.in-section>* {
+    flex-direction: row;
+}
+section#introduction>div.in-section>div:first-child {
+    flex: 0 0 200px;
+}
+div.image-medium {
+    height: 200px;
+    width: 200px;
+}
+div.image-medium>img {
+    height: calc(100% - 2px);
+    width: calc(100% - 2px);
+    border: solid gray 1px;
+}
+div.right-document {
+    padding-left: 20px;
+}
+p#pros::before {
+    content: "👍";
+}
+p#cons::before {
+    content: "👎";
+}
