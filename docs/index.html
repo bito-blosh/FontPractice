@@ -14,34 +14,40 @@
             <h2>いんとろだくしょん</h2>
             <div class="in-section">
                 <div class="image-medium">
-                    <img src="./images/sample.png" alt="sample">
+                    <img src="./images/sample.png" alt="sample.png">
                 </div>
                 <div class="right-document">
-                    <p>リソースパックを利用してFontに任意の画像を割り当てることで，テキストを表示できる場所に画像を表示できる。</p>
+                    <p>リソースパックを利用してFontに任意の画像を割り当てることで，テキストを表示できる画面に画像を表示できる。</p>
                     <p>例:GUIの背景や任意のスロット(GUIのタイトルから)，プレイヤーの体力ゲージ上部(Actionbarから)</p>
-                    <p id="pros">メリット</p>
-                    <ul>
-                        <li>文字ごとに色を自由に変更可能</li>
-                        <li>表示位置もほぼ自由に変更可能</li>
-                    </ul>
-                    <p id="cons">デメリット</p>
-                    <ul>
-                        <li>アニメーションテクスチャは使用不可(shaderを利用したアニメーションは可能らしい)</li>
-                        <li>GUIタイトルを変更したい場合，GUI自体を開き直す必要がある</li>
-                        <li>画面サイズやGUIの大きさによって，表示位置を定められない場合がある</li>
-                    </ul>
+                    <div id="pros">
+                        <p>利点</p>
+                        <ul>
+                            <li>文字ごとに色を自由に変更可能</li>
+                            <li>表示位置もほぼ自由に変更可能</li>
+                        </ul>
+                    </div>
+                    <div id="cons">
+                        <p>欠点</p>
+                        <ul>
+                            <li>アニメーションテクスチャは使用不可(shaderを利用したアニメーションは可能らしい)</li>
+                            <li>GUIタイトルを変更したい場合，GUI自体を開き直す必要がある</li>
+                            <li>画面サイズやGUIの大きさによって，表示位置を定められない場合がある</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="contents">
+        <div class="vertical-bar"></div>
+        <section id="table-of-contents">
             <ul>
-                <li><a href="#id-section1">表示側の仕組み</a></li>
+                <li><a href="#id-section1">Fontが表示される側</a></li>
                 <li>b</li>
                 <li>c</li>
             </ul>
         </section>
+        <div class="vertical-bar"></div>
         <section id="id-section1">
-            <h2>表示側の仕組み</h2>
+            <h2>Fontが表示される側</h2>
             <p>文字が表示される時，文字は前の文字の後ろから1px間隔をあけて表示される。</p>
             <p>例えば5pxの文字が二つ並べられた文字列，の長さは11px(5px+1px+5px)になる。</p>
             <p>この1pxの間隔を変更するには，横幅が指定された空白文字を文字間に挿入する。</p>

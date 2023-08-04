@@ -1,3 +1,4 @@
+/* 全体 */
 body {
     margin: 0px;
     padding: 8px;
@@ -5,30 +6,56 @@ body {
 main {
     height: auto;
 }
+
+/* 各セクション */
+div.vertical-bar {
+    width: auto;
+    height: 0px;
+    margin: 0px 10%;
+    border-top: solid gray 1px;
+}
 div.in-section {
     display: flex;
 }
 div.in-section>* {
     flex-direction: row;
 }
-section#introduction>div.in-section>div:first-child {
-    flex: 0 0 200px;
+
+/* セクション内の要素 */
+h2 {
+    padding-left: 50px;
+}
+h2::before {
+    content: url('./images/square20x20.svg');
+    padding-right: 8px;
+    position: relative;
+    top: 1px;
 }
 div.image-medium {
-    height: 200px;
-    width: 200px;
+    height: 210px;
+    width: 210px;
+    box-sizing: border-box;
+    border: solid gray 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 div.image-medium>img {
-    height: calc(100% - 2px);
-    width: calc(100% - 2px);
-    border: solid gray 1px;
+    margin: auto;
+    height: 200px;
+    width: 200px;
 }
 div.right-document {
     padding-left: 20px;
 }
-p#pros::before {
+
+/* 個別の設定 */
+section#introduction>div.in-section>div:first-child {
+    flex: 0 0 210px;
+}
+div#pros>:first-child::before {
     content: "👍";
 }
-p#cons::before {
+div#cons>:first-child::before {
     content: "👎";
 }
