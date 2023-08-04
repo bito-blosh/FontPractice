@@ -8,10 +8,9 @@ main {
 }
 
 /* 各セクション */
-div.vertical-bar {
-    width: auto;
-    height: 0px;
+hr.vertical-bar {
     margin: 0px 10%;
+    border: 0px;
     border-top: solid gray 1px;
 }
 div.in-section {
@@ -54,8 +53,13 @@ section#introduction>div.in-section>div:first-child {
     flex: 0 0 210px;
 }
 div#pros>:first-child::before {
-    content: "👍";
+    content: '👍';
 }
 div#cons>:first-child::before {
-    content: "👎";
+    content: '👎';
+}
+section#table-of-contents>div {
+    margin: 10px;
+    border: dashed 2px silver;
+    border-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><g stroke-width="0" fill="silver"><polygon points="0,0 4,0 4,1 0,1"/><polygon points="8,0 8,4 7,4 7,0"/><polygon points="8,8 4,8 4,7 8,7"/><polygon points="0,8 0,4 1,4 1,8"/></g></svg>') 1 repeat;
 }
